@@ -1,0 +1,631 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container{
+    max-width: 1400px;
+    margin: 0 50px;
+}
+
+.section1{
+   background: rgba(0, 0, 0, 0.7)url("img/night3.jpg");
+    background-position: cover;
+    background-position: center;
+    height: 100vh;
+    background-blend-mode: darken;
+      
+}
+
+.top{
+ padding: 15px 0;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ color: white;
+ background: black;
+}
+.top .header-icon{
+ font-weight: bold;
+ font-size: 1.34rem;
+ margin: 0 50px;
+}
+.top .header-icon span{
+    color: skyblue;
+}
+.nav ul{
+    display: flex;
+    font-size: 1.rem;  
+    margin: 0 50px; 
+}
+.nav ul li{
+    list-style: none;
+    padding: 0 10px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.nav ul li a:after{
+    width: 1000px;
+    height: 32px;
+    background-color: blue;
+}
+
+ .body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    
+    
+}
+
+.body .header{
+    padding: 15px 0;
+    color: white;
+    font-size: 1.9rem;
+}
+.body .header .title{
+    color: blue;
+}
+.body p{
+    padding: 10px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.body .btn{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 0.5px;
+    font-size: 1rem;
+    padding: 20px 20px;
+    border: 2px solid rgb(157, 142, 142);
+    border-radius: 7px;
+    letter-spacing: 0.1rem;
+    transition:  2s ease;
+}
+.body .btn:hover{
+    color: white;
+    background: blue;
+}
+.menu-wrap .toggler{
+    display: none;
+}
+
+ @media only screen and (max-width: 800px){
+
+    .top{
+        position: fixed;
+        background: black;
+        width: 100%;
+        z-index: 1;
+    }
+    .body{
+        padding-top: 60px;
+    }
+    .top .header-icon{
+        margin: 0 14px;
+    }
+     .menu-wrap {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .menu-wrap .toggler{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        z-index: 2;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        opacity: 0;
+         
+    }
+    .menu-wrap .hamburger{
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        z-index: 1;
+        width: 30px;
+        height: 26px;
+        padding: 1rem;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-wrap .hamburger > div{
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease-in;
+    }
+    .menu-wrap .hamburger > div::before,
+    .menu-wrap .hamburger > div::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        top: -10px;
+        z-index: 1;
+        background-color: #fff;
+    }
+    
+    .menu-wrap .hamburger > div::after{
+        top: 10px;
+    }
+    
+    .menu-wrap .toggler:checked + .hamburger > div{
+    
+        transform: rotate(135deg);
+    }
+    
+    .menu-wrap .toggler:checked + .hamburger > div:before,
+    .menu-wrap .toggler:checked + .hamburger > div:after
+    {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    
+    .menu-wrap .toggler:checked:hover + .hamburger > div{
+        transform: rotate(225deg);
+    }
+
+    .menu-wrap .toggler:checked ~ .menu .nav{
+        visibility: visible;
+    }
+
+    .menu-wrap .toggler:checked ~ .menu > div{
+        transform: scale(1);
+        transition-duration: 0.4s;
+    }
+    .menu-wrap .toggler:checked ~ .menu > div > div{
+        opacity: 1;
+    }
+    
+    .menu .nav{
+     position: fixed;
+     right: 0;
+     border-radius: 20%;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: Center;
+     justify-content: center;
+     visibility: hidden;
+
+ }
+
+  .menu-wrap .menu > div{
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      transform: scale(0);
+      transition: all 0.4s ease;
+  }
+  
+     .menu-wrap .menu > div > div{
+      text-align: center;
+      max-width: 90vw;
+      max-height: 100vh;
+      opacity: 0; 
+      transition: all 0.4s ease;
+    
+
+     }
+
+     .nav ul{
+         display: block;
+         padding: 2rem 0;
+         
+     }
+     .nav ul li{
+         padding: 2rem 0;
+         font-weight: bold;
+         font-size: 1rem;
+        
+     }
+     .relax{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         text-align: center;
+     }
+     .relax .info {
+         padding: 20px 0;
+     }
+
+     .line{
+        position: absolute;
+        left: 190px;
+         width: 70px;
+        height: 4px;
+        border-radius: 20px;
+       background: blue;
+    
+        
+    }
+    
+    .line-p{
+        position: absolute;
+        left: 265px;
+         width: 5px;
+        height: 4px;
+        border-radius: 20px;
+       background: blue;
+    
+        
+    }
+    
+    .line-a{
+        position: absolute;
+        left: 275px;
+         width: 5px;
+        height: 4px;
+        border-radius: 20px;
+       background: blue;
+    
+        
+    }
+    
+    .line-x{
+        position: absolute;
+        left: 285px;
+         width: 5px;
+        height: 4px;
+        border-radius: 20px;
+       background: blue;
+    
+        
+    }
+    .una{
+        display: none;
+        z-index: -3;
+    }
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .content h2{
+        margin-top: 20px;
+        text-align: center;
+        padding: 5px 0;
+        color: black;
+    }
+    .content h3{
+        text-align: center;
+        padding: 5px 0;
+        color: black;
+    }
+    
+    .content p{
+        text-align: center;
+        padding: 0 10px;
+        font-size: 1.3rem;
+        color: black;
+    }
+    .content a{
+        margin-left: 125px;
+        color: white;
+    }
+    .other img{
+        display: none;
+    }
+    .btn-danger{
+        display: inline-block;
+        text-decoration: none;
+        background-color: rgba(44, 83, 201, 0.907);
+        line-height: 0.5px;
+        font-size: 1.rem;
+        margin-top: 20px;
+        padding: 20px 20px;
+        border: 2px solid rgb(157, 142, 142);
+        border-radius: 7px;
+        letter-spacing: 0.1rem;
+        transition: 2s ease;
+        
+    
+    }
+    .before p{
+        padding: 10px 20px;
+    }
+
+    .mon2{
+        border-radius: 2px;
+        width: 360px;
+        height: 0.3px;
+        margin: 0 20px;
+        background: white;
+    }
+    .mon1{
+        display: none;
+    }
+         
+} 
+ .section2{
+      background-color: black;
+      overflow: hideen;
+ }
+
+.relax{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.relax .info h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+.relax .info p{
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
+.relax .img-showcase{
+    max-width: 500px;
+    max-height: 500px;
+    padding: 1px 0;
+
+}
+
+.info .btn-info{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 0.5px;
+    font-size: 1.rem;
+    padding: 20px 20px;
+    border: 2px solid rgb(157, 142, 142);
+    border-radius: 7px;
+    letter-spacing: 0.1rem;
+    transition: 2s ease;
+    
+}
+
+.info .btn-info:hover{
+    color: white;
+    background-color: blue;
+}
+
+.section3{
+    background-color: white;
+    margin-bottom: 20px;
+    
+    
+}
+.services{
+    text-align: center;
+    color: black;
+    
+}
+
+.services .title h2{
+    color: black;
+    margin: 0.7rem 0;
+    text-align: center;
+}
+.underline{
+    position: absolute;
+    left: 580px;
+     width: 70px;
+    height: 4px;
+    border-radius: 20px;
+   background: blue;
+
+    
+}
+
+.underline-p{
+    position: absolute;
+    left: 655px;
+     width: 5px;
+    height: 4px;
+    border-radius: 20px;
+   background: blue;
+
+    
+}
+
+.underline-a{
+    position: absolute;
+    left: 665px;
+     width: 5px;
+    height: 4px;
+    border-radius: 20px;
+   background: blue;
+
+    
+}
+
+.underline-x{
+    position: absolute;
+    left: 675px;
+     width: 5px;
+    height: 4px;
+    border-radius: 20px;
+   background: blue;
+
+    
+}
+
+
+img{
+    max-width: 50%;
+    max-height: 700px;
+}
+.services p{
+    color: white;
+}
+.card1{
+    background-color: black;
+    max-width: 300px;
+    height: 500px;
+    margin-top: 2rem;
+    padding: 0 10px;
+}
+.mb-2{
+    margin-bottom: 1.5rem;
+}
+.mb-2 h3{
+    padding-top: 1rem;
+}
+.card1 .card-img{
+   max-width: 500vw;
+    padding: 0;
+}
+
+.card1 .btn-secondary{
+    display: inline-block;
+    text-decoration: none;
+    background-color: blue;
+    line-height: 0.5px;
+    font-size: 1.rem;
+    padding: 20px 20px;
+    border: 2px solid rgb(157, 142, 142);
+    border-radius: 7px;
+    letter-spacing: 0.1rem;
+    transition: 2s ease;
+    
+}
+.card1 .btn-secondary:hover{
+
+    color: white;
+    background-color: rgba(0, 0, 255, 0.523);
+
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.section4{
+    background: white;
+    color: blue;
+}
+.section4 .topic h2{
+    margin-top: 2.7rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: black;
+}
+.other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+content{
+    padding-top: 20px;
+    text-align: center;
+}
+.content h2{
+    padding: 5px 0;
+    color: black;
+}
+.content h3{
+    padding: 5px 0;
+    color: black;
+}
+
+.content p{
+    font-size: 1.3rem;
+    color: black;
+}
+.content a{
+    color: white;
+}
+.other img{
+    margin-right: 5px;
+    text-align: center;
+    padding-top: 20px;
+}
+.btn-danger{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(44, 83, 201, 0.907);
+    line-height: 0.5px;
+    font-size: 1.rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 20px 20px;
+    border: 2px solid rgb(157, 142, 142);
+    border-radius: 7px;
+    letter-spacing: 0.1rem;
+    
+
+}
+
+.section5{
+    background: rgba(0, 0, 0, 0.8)url("img/open.jpg");
+     background-position: cover;
+     background-position: center;
+     height: 50vh;
+     background-blend-mode: darken;
+       
+ }
+
+ .mon1{
+     border-radius: 2px;
+     width: 500px;
+     height: 0.3px;
+     margin: 5px 20px;
+     background: white;
+ }
+ .before{
+     color: white;
+     z-index: 2px;
+ }
+
+ .heading h2{
+    padding: 30px  20px;
+ }
+ .before p{
+     padding: 15px 20px;
+ }
+
+ .section6{
+     background: white;
+     color: black;
+     height: 10vh;
+ }
+
+ .lead{
+     display: block;
+     color: black;
+     margin: 30px 20px;
+     font-size: 1.3rem;
+     font-weight: bold;
+ }
+ .lead span{
+     color: skyblue;
+ }
