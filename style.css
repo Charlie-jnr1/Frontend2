@@ -16,6 +16,7 @@
     background-position: center;
     height: 100vh;
     background-blend-mode: darken;
+    overflow: hidden;
       
 }
 
@@ -262,7 +263,7 @@
 
      .line{
         position: absolute;
-        left: 190px;
+        left: 175px;
          width: 70px;
         height: 4px;
         border-radius: 20px;
@@ -273,7 +274,7 @@
     
     .line-p{
         position: absolute;
-        left: 265px;
+        left: 250px;
          width: 5px;
         height: 4px;
         border-radius: 20px;
@@ -284,7 +285,7 @@
     
     .line-a{
         position: absolute;
-        left: 275px;
+        left: 260px;
          width: 5px;
         height: 4px;
         border-radius: 20px;
@@ -295,7 +296,7 @@
     
     .line-x{
         position: absolute;
-        left: 285px;
+        left: 270px;
          width: 5px;
         height: 4px;
         border-radius: 20px;
@@ -347,7 +348,7 @@
         line-height: 0.5px;
         font-size: 1.rem;
         margin-top: 20px;
-        padding: 20px 20px;
+        margin-left: 10px;
         border: 2px solid rgb(157, 142, 142);
         border-radius: 7px;
         letter-spacing: 0.1rem;
@@ -373,7 +374,7 @@
 } 
  .section2{
       background-color: black;
-      overflow: hideen;
+      overflow: hidden;
  }
 
 .relax{
@@ -419,6 +420,7 @@
 .section3{
     background-color: white;
     margin-bottom: 20px;
+    overflow: hidden;
     
     
 }
@@ -531,6 +533,7 @@ img{
 .section4{
     background: white;
     color: blue;
+    overflow: hidden;
 }
 .section4 .topic h2{
     margin-top: 2.7rem;
@@ -569,21 +572,23 @@ content{
     text-align: center;
     padding-top: 20px;
 }
+
 .btn-danger{
     display: inline-block;
     text-decoration: none;
-    background-color: rgba(44, 83, 201, 0.907);
     line-height: 0.5px;
     font-size: 1.rem;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: blue;
     padding: 20px 20px;
+    margin-bottom: 10px;
     border: 2px solid rgb(157, 142, 142);
     border-radius: 7px;
     letter-spacing: 0.1rem;
+    transition: 2s ease;
     
-
 }
+
 
 .section5{
     background: rgba(0, 0, 0, 0.8)url("img/open.jpg");
@@ -591,6 +596,7 @@ content{
      background-position: center;
      height: 50vh;
      background-blend-mode: darken;
+     overflow: hidden;
        
  }
 
@@ -617,6 +623,7 @@ content{
      background: white;
      color: black;
      height: 10vh;
+     overflow: hiddengit ;
  }
 
  .lead{
