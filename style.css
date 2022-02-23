@@ -263,7 +263,7 @@
 
      .line{
         position: absolute;
-        left: 175px;
+        left: 165px;
          width: 70px;
         height: 4px;
         border-radius: 20px;
@@ -274,7 +274,7 @@
     
     .line-p{
         position: absolute;
-        left: 250px;
+        left: 240px;
          width: 5px;
         height: 4px;
         border-radius: 20px;
@@ -285,7 +285,7 @@
     
     .line-a{
         position: absolute;
-        left: 260px;
+        left: 250px;
          width: 5px;
         height: 4px;
         border-radius: 20px;
@@ -296,7 +296,7 @@
     
     .line-x{
         position: absolute;
-        left: 270px;
+        left: 260px;
          width: 5px;
         height: 4px;
         border-radius: 20px;
@@ -347,6 +347,7 @@
         background-color: rgba(44, 83, 201, 0.907);
         line-height: 0.5px;
         font-size: 1.rem;
+        text-align: center;
         margin-top: 20px;
         margin-left: 10px;
         border: 2px solid rgb(157, 142, 142);
@@ -578,6 +579,7 @@ content{
     text-decoration: none;
     line-height: 0.5px;
     font-size: 1.rem;
+    text-align: center;
     margin-top: 10px;
     background-color: blue;
     padding: 20px 20px;
