@@ -341,28 +341,18 @@
     .other img{
         display: none;
     }
-    .btn-q{
-        text-decoration: none;
-        background-color: rgba(44, 83, 201, 0.907);
-        line-height: 0.5px;
-        font-size: 1.rem;
-        text-align: center;
-        margin-top: 20px;
-        padding-right: 20px;
-        border: 2px solid rgb(157, 142, 142);
-        border-radius: 7px;
-        letter-spacing: 0.1rem;
-        transition: 2s ease-in;
-        
-    
+    .other{
+        flex: none;
     }
+    
+    
     .before p{
         padding: 10px 10px;
     }
 
     .mon2{
         border-radius: 2px;
-        width: 360px;
+        width: 350px;
         height: 0.3px;
         margin: 0 10px;
         background: white;
@@ -583,6 +573,7 @@ content{
     background-color: blue;
     padding: 20px 20px;
     margin-bottom: 10px;
+    margin-right: 20px;
     border: 2px solid rgb(157, 142, 142);
     border-radius: 7px;
     letter-spacing: 0.1rem;
