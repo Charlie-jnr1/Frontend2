@@ -293,7 +293,7 @@
 
     .card1{
         background-color: black;
-        max-width: 250px!important;
+        max-width: 250px;
         height: 500px;
         margin-top: 2rem;
         padding: 0 10px;
@@ -318,10 +318,6 @@
         font-size: 1.3rem;
         color: black;
     }
-    .content a{
-        margin-left: 125px;
-        color: white;
-    }
     .other img{
         display: none;
     }
@@ -330,7 +326,7 @@
         color: white;
         text-align: center;
         background: blue;
-        margin-left: 115px;
+        margin-left: 105px;
         padding: 20px 20px;
         text-decoration: none;
         border: 2px solid rgb(157, 142, 142);
