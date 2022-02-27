@@ -102,8 +102,27 @@
 .menu-wrap .toggler{
     display: none;
 }
+@media only screen and (max-width: 1000px){
+    .topic h2{
+        padding: 10px 0;
+    }
 
- @media only screen and (max-width: 800px){
+    .btn-info{
+        margin-bottom: 10px;
+    }
+
+}
+    
+  @media only screen and (max-width: 500px){
+      
+   
+ .body p{
+     font-size: 1.4rem;
+ }
+    
+    
+     }  
+ @media only screen and (max-width: 700px){
 
     .top{
         position: fixed;
@@ -261,54 +280,9 @@
      .relax .info {
          padding: 20px 0;
      }
-
-     .line{
-        position: absolute;
-        left: 165px;
-         width: 70px;
-        height: 4px;
-        border-radius: 20px;
-       background: blue;
+     
+     
     
-        
-    }
-    
-    .line-p{
-        position: absolute;
-        left: 240px;
-         width: 5px;
-        height: 4px;
-        border-radius: 20px;
-       background: blue;
-    
-        
-    }
-    
-    .line-a{
-        position: absolute;
-        left: 250px;
-         width: 5px;
-        height: 4px;
-        border-radius: 20px;
-       background: blue;
-    
-        
-    }
-    
-    .line-x{
-        position: absolute;
-        left: 260px;
-         width: 5px;
-        height: 4px;
-        border-radius: 20px;
-       background: blue;
-    
-        
-    }
-    .una{
-        display: none;
-        z-index: -3;
-    }
     .cards{
         display: flex;
         align-items: center;
@@ -316,6 +290,15 @@
         flex-direction: column;
         overflow-x: hidden;
     }
+
+    .card1{
+        background-color: black;
+        max-width: 250px!important;
+        height: 500px;
+        margin-top: 2rem;
+        padding: 0 10px;
+    }
+    
 
     .content h2{
         margin-top: 20px;
@@ -347,7 +330,7 @@
         color: white;
         text-align: center;
         background: blue;
-        margin-left: 75px;
+        margin-left: 115px;
         padding: 20px 20px;
         text-decoration: none;
         border: 2px solid rgb(157, 142, 142);
@@ -434,49 +417,8 @@
     margin: 0.7rem 0;
     text-align: center;
 }
-.underline{
-    position: absolute;
-    left: 580px;
-     width: 70px;
-    height: 4px;
-    border-radius: 20px;
-   background: blue;
 
-    
-}
 
-.underline-p{
-    position: absolute;
-    left: 655px;
-     width: 5px;
-    height: 4px;
-    border-radius: 20px;
-   background: blue;
-
-    
-}
-
-.underline-a{
-    position: absolute;
-    left: 665px;
-     width: 5px;
-    height: 4px;
-    border-radius: 20px;
-   background: blue;
-
-    
-}
-
-.underline-x{
-    position: absolute;
-    left: 675px;
-     width: 5px;
-    height: 4px;
-    border-radius: 20px;
-   background: blue;
-
-    
-}
 
 
 img{
