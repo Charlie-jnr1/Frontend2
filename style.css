@@ -131,7 +131,7 @@
         z-index: 1;
     }
     .body{
-        padding: 155px  0;
+        padding: 150px  0;
     }
     .top .header-icon{
         margin: 0 14px;
@@ -326,7 +326,7 @@
         color: white;
         text-align: center;
         background: blue;
-        margin-left: 100px;
+        margin-left: 90px;
         padding: 20px 20px;
         text-decoration: none;
         border: 2px solid rgb(157, 142, 142);
